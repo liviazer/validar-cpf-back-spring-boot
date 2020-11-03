@@ -18,5 +18,11 @@ public class ValidadorController {
 		}
 		 return "{\"status\": \"invalido\"}";
 	}
-
+	@GetMapping("/")
+	public String index() {
+		if (Validador.isCPF(cpf)) {
+			
+		 return "{\"mensagem\": \"seja bem vindo a api da Livia\"}";
+	}
+	}
 }
