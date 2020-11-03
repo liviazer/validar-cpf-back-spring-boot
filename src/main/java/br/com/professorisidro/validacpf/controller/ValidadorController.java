@@ -20,9 +20,9 @@ public class ValidadorController {
 	}
 	@GetMapping("/")
 	public String index() {
-		if (Validador.isCPF(cpf)) {
+		
 			
 		 return "{\"mensagem\": \"seja bem vindo a api da Livia\"}";
 	}
 	}
-}
+
